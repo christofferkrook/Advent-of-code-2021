@@ -17,7 +17,6 @@ def main():
     for i in range(len(positions)):
         positions[i] = int(positions[i])
     
-   #smallestFuelPos = np.round(sum(positions)/len(positions))
     smallestFuelPos = np.round(np.median(positions))
     
     fuel = 0
@@ -28,12 +27,6 @@ def main():
     
     
     # part 2
-    os.chdir('C:/Users/chk/Documents/GitHub/Advent-of-code-2021/Advent-of-code-2021/Day7')
-    f = open("input.txt")
-    positions = str.split(f.readline(), ',')
-    
-    for i in range(len(positions)):
-        positions[i] = int(positions[i])
     
     smallestFuelPos = np.round(sum(positions)/len(positions))
     
